@@ -4,10 +4,8 @@
     {
         static void Main(string[] args)
         {
+            //BaseClass objBase = new BaseClass();
             DerivedClass objDerived = new DerivedClass();
-            //objDerived.myPrivateVar = 1;
-            //objDerived.myProtectedVar = 2;
-            objDerived.myPublicVar = 3;
         }
     }
 }

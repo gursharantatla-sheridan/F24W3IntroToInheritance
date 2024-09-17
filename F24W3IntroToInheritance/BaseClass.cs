@@ -8,18 +8,20 @@ namespace F24W3IntroToInheritance
 {
     public class BaseClass
     {
-        private int myPrivateVar;
-        protected int myProtectedVar;
-        public int myPublicVar;
+        protected int myVar;
+
+        public BaseClass()
+        {
+            Console.WriteLine("Base class constructor called");
+        }
     }
 
     public class DerivedClass : BaseClass
     {
-        public void M1()
+        public DerivedClass()
         {
-            //myPrivateVar = 1;
-            myProtectedVar = 2;
-            myPublicVar = 3;
+            Console.WriteLine("Derived class constructor called");
+            myVar = 1;
         }
     }
 }
