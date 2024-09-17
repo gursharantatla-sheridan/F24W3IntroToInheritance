@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             //BaseClass objBase = new BaseClass();
-            DerivedClass objDerived = new DerivedClass();
+            DerivedClass objDerived = new DerivedClass("hello");
         }
     }
 }

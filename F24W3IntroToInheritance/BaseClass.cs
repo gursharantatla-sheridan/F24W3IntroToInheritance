@@ -14,11 +14,22 @@ namespace F24W3IntroToInheritance
         {
             Console.WriteLine("Base class constructor called");
         }
+
+        public BaseClass(string message)
+        {
+            Console.WriteLine("Base class constructor with message: " + message);
+        }
     }
 
     public class DerivedClass : BaseClass
     {
         public DerivedClass()
+        {
+            Console.WriteLine("Derived class constructor called");
+            myVar = 1;
+        }
+
+        public DerivedClass(string msg) : base(msg)
         {
             Console.WriteLine("Derived class constructor called");
             myVar = 1;
